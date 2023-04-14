@@ -1,0 +1,223 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.wrapper {
+  position: relative;
+  width: 1440px;
+}
+.header_background {
+  position: absolute;
+  width: 1440px;
+  height: 1493px;
+  left: 0px;
+  top: 0px;
+
+  background: url(img/background_mlb.png);
+  background-repeat: no-repeat;
+  opacity: 0.64;
+}
+.header_logo {
+  position: absolute;
+  width: 253px;
+  height: 285px;
+  left: 1065px;
+  top: 50px;
+
+  background: url(img/logo_mlb.png);
+  background-repeat: no-repeat;
+}
+.galley {
+  width: 1440px;
+  height: 1616px;
+  background-color: inherit;
+  position: absolute;
+  top: 390px;
+}
+
+.galley-product {
+  position: absolute;
+  width: 1273px;
+  height: 1100px;
+  left: 83px;
+  top: 10px;
+  background-color: inherit;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1px;
+  isolation: isolate;
+
+  width: 315.5px;
+  height: 342px;
+
+  border: 1px solid #cecece;
+}
+.grid-item_img {
+  width: 325px;
+  height: 230px;
+  position: relative;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 1;
+}
+.grid-item_img__percentage {
+  width: 57px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  left: 245px;
+  background-color: #006340;
+}
+.percentage {
+  position: absolute;
+  width: 26.61px;
+  height: 16px;
+  left: 15px;
+  top: 4px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  /* or 100% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.grid-item_description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 25px;
+
+  width: 313.5px;
+  height: 110px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 0;
+  /* background-color: violet; */
+}
+.grid-item_description__name {
+  width: 285.67px;
+  height: 44px;
+
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  /* or 129% */
+
+  display: flex;
+  align-items: center;
+
+  color: #030a1d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.grid-item_description__price {
+  width: 293.5px;
+  height: 21px;
+
+  /* Inside auto layout */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-item_description__price__cost {
+  width: 72px;
+  height: 17px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: rgba(18, 18, 18, 0.5);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.grid-item_description__price__sale {
+  width: 87px;
+  height: 17px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+
+  color: #006340;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.main-story {
+  position: absolute;
+  width: 1342px;
+  height: 1846.34px;
+  left: 83px;
+  top: 2900px;
+}
+.main-story p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header_icon {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  left: 2.78%;
+  right: 94.44%;
+  top: 2.38%;
+  bottom: 96.12%;
+
+  background-image: url(img/icon-home.png);
+  background-repeat: no-repeat;
+}
+.header_icon:hover {
+  cursor: pointer;
+}
